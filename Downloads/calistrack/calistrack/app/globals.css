@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --surface: 0 0% 97%;
+  --foreground: 222 20% 10%;
+  --muted: 220 10% 45%;
+  --accent: 84 81% 44%;
+  --border: 220 13% 88%;
+  --danger: 0 72% 51%;
+}
+.dark {
+  --background: 222 20% 7%;
+  --surface: 222 16% 12%;
+  --foreground: 0 0% 96%;
+  --muted: 220 8% 65%;
+  --accent: 84 81% 52%;
+  --border: 222 12% 20%;
+  --danger: 0 72% 58%;
+}
+* { border-color: hsl(var(--border)); }
+body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); font-family: ui-sans-serif, system-ui, sans-serif; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
