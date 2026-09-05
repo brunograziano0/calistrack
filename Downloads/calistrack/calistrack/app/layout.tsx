@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   description: "Planeje, execute e acompanhe sua evolucao em calistenia.",
   manifest: "/manifest.webmanifest",
 };
-
 export const viewport: Viewport = { themeColor: "#0b0f14", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
